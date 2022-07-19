@@ -6,7 +6,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com">
 
-  <title>DigiGram - Free Agency Template</title>
+  <title>Coursiry</title>
 
   <link rel="stylesheet" href="../vendor/animate/animate.css">
 
