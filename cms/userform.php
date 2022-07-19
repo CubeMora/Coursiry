@@ -5,7 +5,12 @@
 include 'head.php';
 ?>
 <body>
- 
+ <div style="margin: 90px; ">
+ <?php
+    include 'nav.php';
+    ?>
+ </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
  <script>window.jQuery || document.write('<script src="../public/js/jquery-3.1.1.min.js"><\/script>')</script>
     <!-- DATATABLES -->
@@ -20,7 +25,7 @@ include 'head.php';
     <script src="../public/js/bootbox.min.js"></script> 
     <script src="../public/js/bootstrap-select.min.js"></script>  
 
-
+<section>
     <div class="content-wrapper">        
         <!-- Main content -->
         <section class="content">
@@ -130,7 +135,7 @@ include 'head.php';
               </div><!-- /.col -->
           </div><!-- /.row -->
       </section><!-- /.content -->
-
+</section>
     </div><!-- /.content-wrapper -->
   <!--Fin-Contenido-->
 

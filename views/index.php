@@ -46,24 +46,22 @@ include 'head.php';
               <?php } ?>
             </p>
 
-            <a href="#" class="btn btn-outline border text-secondary">
-              <?php
-              foreach ($resultado as $row) { ?>
-                <?php echo $row['button1']; ?>
-
-              <?php } ?>
-
-            </a>
-            <a href="#" class="btn btn-primary btn-split ml-2">
-              <?php
-              foreach ($resultado as $row) { ?>
-                <?php echo $row['button2']; ?>
-
-              <?php } ?>
-              <!-- Header 1 -->
-
-              <div class="fab"><span class="mai-play"></span></div>
-            </a>
+            
+            
+            
+            <?php
+						
+						if (isset($_SESSION["auth"])) {
+							echo("
+							<li><a class='btn btn-primary btn-split ml-2' href='../cms/userform.php'>Enter the dashboard</a></li>
+							
+							");
+						}else {
+							echo("
+							<li><a class='btn btn-primary btn-split ml-2' >No account logged</a></li>
+							");
+						}
+						?>
           </div>
           <div class="col-lg-6 py-3 wow zoomIn">
             <div class="img-place">

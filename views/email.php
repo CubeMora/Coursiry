@@ -68,8 +68,15 @@ include 'head.php';
               
               <button type="submit" class="btn btn-primary rounded-pill mt-4" name="confirm">Send Message</button>
             </form>
-          
-			
+            <?php
+					$email = $_POST['email'];
+
+					include "../config/class.email.php";
+					$ref = new Email();
+					$message = "Hello! We are the team behing Coursiry. Is there anything we can help you?";
+					$ref->sendEmail($email, "MR", "Contact Email", $message);
+					?>
+			<h4>We have sent you an email.</h4>		
           </div>
         </div>
       </div> <!-- .container -->
@@ -83,7 +90,7 @@ include 'head.php';
   <?php
   include 'js.php';
   ?>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 
 
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
